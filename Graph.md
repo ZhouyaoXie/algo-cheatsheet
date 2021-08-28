@@ -1,3 +1,10 @@
+# TOC
+
+- DAG
+- Topological Sort
+- Shortest Path
+
+
 ### DAG
 
 Directed, acyclic graphs. Trees are a special type of DAGs that satisfies a child has only one parent.
