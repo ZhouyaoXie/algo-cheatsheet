@@ -1,9 +1,22 @@
 # TOC
 
+- Disjoint Set
 - DAG
 - Topological Sort
 - Shortest Path
 
+### Disjoint Set
+
+A data structure that stores connectivity info by keeping a hashmap storing {node: parent} pairs. Supports two operations:
+
+- Union: when union two nodes u and v, need to choose one node as the parent node. If u is chosen, find the root of v, and update its parent to be u.
+  - Optimization: union by rank. Keep track of the rank of each node, and when union, always choose the larger rank node to be the parent.
+  - Time complexity: amortized average O(a(N)), where a(.) is the inverse Ackermann function, close to O(1) in practice. 
+- Find: to check whether u and v are connected, check whether their root nodes are the same. Root node can be found by recursively going to the parent node until you reach a node whose parent is itself.
+  - Optimization: path compression. When recursing upwards to find the root, also update the parent of each node on the path to be the root node.
+  - Time complexity: amortized average O(a(N)).
+
+My implementation of the optimized disjoint set data structure: [check this repo](https://github.com/ZhouyaoXie/DisjointSet)
 
 ### DAG
 
