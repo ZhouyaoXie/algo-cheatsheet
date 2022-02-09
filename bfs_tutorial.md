@@ -70,6 +70,5 @@ class Solution:
 ## Additional Practices
 - Task 1: Use a 3-by-3 matrix to walk through the code above step by step to make sure you understand what each of the two while loops are doing and what `unvisited` and `q` represent.
 - Task 2: If the question asks "how many islands have an area larger than 2", how would you modify the code above to solve this question?
-- Task 3: What if the question is "How many islands do not contain cells on the boundary"?
+- Task 3: What if the question is "what is the area of the largest island"? How about "how many islands do not contain cells on the boundary"? Now do you see how BFS could be adapted to solve a series of graph problems?
 - Task 4: Use the same algorithm to solve "130. Surrounded Regions", "785. Is Graph Bipartite?"
-- 
